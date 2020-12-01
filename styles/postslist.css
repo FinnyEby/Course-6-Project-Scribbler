@@ -58,16 +58,18 @@ body, html {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
  }
- .fa-trash-o {
+ .fa-trash {
      position: relative;
      float: right !important; 
      margin: 15px;
      cursor: pointer;
+     color: grey;
  }
  .fa-ellipsis-h {
     float: right;
     margin: 15px;
     cursor: pointer;
+    color: grey;
  }
  #deleteButton {
     width: 100px;

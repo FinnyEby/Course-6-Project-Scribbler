@@ -20,13 +20,13 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
-    <!--header code-->
+    <!-- header code -->
     <header>
-      <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
       <button class="top-buttons" data-toggle="modal" data-target="#signInModal">Sign In</button>
+      <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
       <p id="pageTitle" class="site-logo">ScriBBler</p>
       <p class="middleText">Explore, Imagine, Create</p>
-      <!--Sign Up modal Code-->
+      <!-- Sign Up modal Code -->
       <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <!--Sign In modal Code-->
+      <!-- Sign In modal Code -->
       <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <!--Create Post modal code-->
+      <!-- Create Post modal code -->
       <div id="createPostModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
@@ -102,8 +102,8 @@
         </div>
       </div>
     </header>
-    <!--container Code-->
-    <div class="container">
+    <!-- container Code -->
+    <div class="container" id="container">
       <button class="main-buttons" onclick="goToPostListsPage()">All Posts</button>
       <button class="main-buttons" data-toggle="modal" data-target="#createPostModal">Create Post</button>
     </div>

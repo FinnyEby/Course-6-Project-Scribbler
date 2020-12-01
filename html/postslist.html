@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <!-- Font Awesome file -->
+    <!-- Google Fonts file -->
     <title>All Posts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->    
+    <!-- header code -->    
     <header>
-        <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
         <button class="top-buttons" data-toggle="modal" data-target="#signInModal">Sign In</button>
+        <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
         <p id="pageTitle" class="site-logo">ScriBBler</p>
         <p class="middleText">Explore, Imagine, Create</p>
-        <!--Sign Up modal Code-->
+        <!-- Sign Up modal Code -->
         <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-        <!--Sign In modal Code-->
+        <!-- Sign In modal Code -->
         <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <!-- TODO: Write code for delete post modal here -->
+        <!-- code for delete post modal -->
         <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm modal-dialog-centered">
               <div class="modal-content">
@@ -88,8 +88,7 @@
         </div>
     </div>
       </header>
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
-
+    
     <!-- list of all posts starts here -->
     <div id="container" class="container">
         <!-- post 1 starts here -->
@@ -99,8 +98,8 @@
                     <p>Srishti Gupta</p>
                 </div>
                 <div class="col-9">
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card1)"></i>
+                    <!-- Font Awesome icon for delete icon -->
+                    <i class="fa fa-trash" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card1)"></i>
                     <div class="subtitle">
                         <span>
                             <a>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</a>
@@ -108,8 +107,8 @@
                     </div>
                     <p class="content">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <!-- Font Awesome icon for horizontal ellipsis icon -->
+                        <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="goToPostPage()"></i>
                     </span>
                 </div>
             </div>
@@ -123,8 +122,8 @@
                     <p>Colby Fayock</p>
                 </div>
                 <div class="col-9">
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card2)"></i>
+                    <!-- Font Awesome icon for delete icon -->
+                    <i class="fa fa-trash" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card2)"></i>
                     <div class="subtitle">
                         <span>
                             <a>What is linting and how can it save you time?</a>
@@ -132,8 +131,8 @@
                     </div>
                     <p class="content">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <!-- Font Awesome icon for horizontal ellipsis icon -->
+                        <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="goToPostPage()"></i>
                     </span>
                 </div>
             </div>
@@ -147,8 +146,8 @@
                     <a>Yazeed Bzadough</a>
                 </div>
                 <div class="col-9">
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card3)"></i>
+                    <!-- Font Awesome icon for delete icon -->
+                    <i class="fa fa-trash" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card3)"></i>
                     <div class="subtitle">
                         <span>
                             <a>How to Get More Views on Your Tech Blog</a>
@@ -156,8 +155,8 @@
                     </div>
                     <p class="content">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <!-- Font Awesome icon for horizontal ellipsis icon -->
+                        <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="goToPostPage()"></i>
                     </span>
                 </div>
             </div>
@@ -171,8 +170,8 @@
                     <p>Cedd Burge</p>
                 </div>
                 <div class="col-9">
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card4)"></i>
+                    <!-- Font Awesome icon for delete icon -->
+                    <i class="fa fa-trash" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card4)"></i>
                     <div class="subtitle">
                         <span>
                             <a>How to write easily describable code</a>
@@ -181,8 +180,8 @@
                     <p class="content">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <!-- Font Awesome icon for horizontal ellipsis icon -->
+                        <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="goToPostPage()"></i>
                     </span>
                 </div>
             </div>
@@ -196,8 +195,8 @@
                     <p>Srishti Gupta</p>
                 </div>
                 <div class="col-9">
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card5)"></i>
+                    <!-- Font Awesome icon for delete icon -->
+                    <i class="fa fa-trash" aria-hidden="true" data-toggle="modal" data-target="#deleteModal" onclick="delId(card5)"></i>
                     <div class="subtitle">
                         <span>
                             <a>Everything you should know about ‘module’ & ‘require’ in Node.js</a>
@@ -206,8 +205,8 @@
                     <p class="content">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                         named xyz.</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <!--  Font Awesome icon for horizontal ellipsis icon -->
+                        <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="goToPostPage()"></i>
                     </span>
                 </div>
             </div>

@@ -1,3 +1,6 @@
+.header {
+  position: fixed;
+}
 button {
     width: 90px;
     padding: 10px;
@@ -5,11 +8,13 @@ button {
     font-size: 90%;
     background: blue;
     color: white;
-    float: right;    
     margin: 10px 10px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     border: none;
+}
+.top-buttons {
+  float: right;    
 }
 .site-logo {
     font-family: 'Montez', cursive;
@@ -27,6 +32,7 @@ h1 {
     font-family: 'Ubuntu Mono', monospace;
     margin-top: 0;
     margin: 0 0 0px 10px;
+    color: #112fb4;
 }
 .modaltextbox {
   width: 100%;
