@@ -1,0 +1,65 @@
+body, html {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.main-buttons {
+  float: right;
+  cursor: pointer;
+  width: 110px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 90%;
+  background: yellow;
+  color: black;
+  margin: 10px 10px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  position: fixed;
+  min-width: 100%;
+  min-height: calc(100% - 99px);
+  left: 0;
+  top: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modaltextbox {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 0%;
+}
+.modallabel {
+  padding: 5px;
+  padding-left: 0%;
+  margin-bottom: 0px;
+}
+.modalbutton {
+  width: 100%;
+  background-color: rgb(20, 199, 20);
+  margin: 15px 0px 15px 0px;
+  border: none;
+
+}
+.signInPageMessage {
+  text-align: center;
+}
+.signUpLink {
+  cursor: pointer;
+}
+.createbutton {
+  float: none;
+  width: 110px;
+  background-color: rgb(20, 199, 20);
+  border: none;
+  margin-bottom: 10px;
+}
+textarea {
+  height: 400px;
+}
