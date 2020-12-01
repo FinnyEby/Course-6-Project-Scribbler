@@ -1,0 +1,71 @@
+body, html {
+    min-width: 1080px;
+}
+#container {
+    padding: 2%;
+    width: 80%;
+}
+#contentTitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+#author {
+    font-size: x-large;
+    color: grey;
+    font-family: 'Ubuntu Mono', monospace;
+}
+#editButton {
+    background-color: red;
+    float: right;
+    width: 90px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 90%;
+    margin: 0px 0px 0px 0px;
+}
+#name-editButton {
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+#content {
+    width: fit-content;
+    margin: 10px;
+    margin-top: 25px;
+    font-family: serif;
+    text-align: justify;
+}
+#likebutton {
+    background-color: red;
+    margin: 10px;
+}
+#commenttextarea {
+    width: 80%;
+    height: 100px;
+    margin: 10px;
+}
+#commentbutton {
+    background-color: red;
+    margin: 10px;
+}
+#comment-section {
+    visibility: hidden;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+}
+.comment {
+    background-color: white;
+    padding: 2%;
+    margin: 10px 0 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#commentslabel {
+    margin: 10px;
+}
+#likecounter {
+    margin: 10px;
+}

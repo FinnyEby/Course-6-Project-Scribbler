@@ -4,6 +4,7 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <title>ScriBBler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,9 +22,9 @@
     <!-- TODO: Include all your code for the header and home page here -->
     <!--header code-->
     <header>
-      <button class="top-buttons" type="button" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-      <button class="top-buttons" type="button" data-toggle="modal" data-target="#signInModal">Sign In</button>
-      <a id="pageTitle" class="site-logo">ScriBBler</a>
+      <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+      <button class="top-buttons" data-toggle="modal" data-target="#signInModal">Sign In</button>
+      <p id="pageTitle" class="site-logo">ScriBBler</p>
       <p class="middleText">Explore, Imagine, Create</p>
       <!--Sign Up modal Code-->
       <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
@@ -74,13 +75,8 @@
           </div>
         </div>
       </div>
-    </header>
-    <!--container Code-->
-    <div class="container">
-      <button class="main-buttons" onclick="goToPostListsPage()">All Posts</button>
-      <button class="main-buttons" data-toggle="modal" data-target="#createPostModal">Create Post</button>
       <!--Create Post modal code-->
-      <div id="createPostModal" data-backdrop="false" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div id="createPostModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -105,6 +101,11 @@
           </div>
         </div>
       </div>
+    </header>
+    <!--container Code-->
+    <div class="container">
+      <button class="main-buttons" onclick="goToPostListsPage()">All Posts</button>
+      <button class="main-buttons" data-toggle="modal" data-target="#createPostModal">Create Post</button>
     </div>
 </body>
 </html>

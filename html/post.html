@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome file -->
+    <!-- Google Fonts file -->
+    <title>Post page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <script src="../scripts/post.js"></script>
+</head>
+
+<body>
+  <!-- header code --> 
+    <header>
+      <button class="top-buttons" data-toggle="modal" data-target="#signInModal">Sign In</button>
+      <button class="top-buttons" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+        <p id="pageTitle" class="site-logo">ScriBBler</p>
+        <p class="middleText">Explore, Imagine, Create</p>
+        <!--Sign Up modal Code-->
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signUpModalLabel">Get Started</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label class="modallabel" id="name">Name</label><br>
+                  <input class="modaltextbox" type="text" id="name" required="" placeholder="Enter your name" required><br>
+                  <label class="modallabel" id="username">Username</label><br>
+                  <input class="modaltextbox" type="text" id="username" placeholder="Enter your username" required><br>
+                  <label class="modallabel" id="userpassword">Password</label><br>
+                  <input class="modaltextbox" type="password" id="userpassword" placeholder="Enter your password" required><br>
+                  <label class="modallabel" id="confirmpassword">Confirm Password</label><br>
+                  <input class="modaltextbox" type="password" id="passwordrepeat" placeholder="Re-enter your password" required><br>
+                  <button class="modalbutton" type="submit" class="btn btn-success">Sign up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sign In modal Code-->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Welcome Back!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label class="modallabel" id="username">Username</label><br>
+                  <input class="modaltextbox" type="text" id="username" placeholder="Enter your username" required><br>
+                  <label class="modallabel" id="userpassword">Password</label><br>
+                  <input class="modaltextbox" type="password" id="userpassword" placeholder="Enter your password" required><br>
+                  <button class="modalbutton" type="submit" class="btn btn-success">Sign In</button>
+                  <p class="signInPageMessage">Not a member? <a class="signUpLink" data-dismiss="modal" data-toggle="modal" data-target="#signUpModal">Sign Up</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Container Code-->
+      <div id="container" class="container">
+        <p id="contentTitle">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+        <div id="name-editButton">
+          <a id="author">Srishti Gupta</a>
+          <button id="editButton" class="shadow" onclick="enableEditableMode()">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        </div>
+        <div>
+          <p id="content">Nodejs treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz js, then this file is treated as a module in Node, and you can say that you've created a module named xyz. Let's take an example to understand this better. You have a file named circlejs which consists of the logic for calculating the area & the circumference of a circle of a given radius. You can call circlejs file a module named circle. You might be wondering why is there a need to have multiple modules? You could have just written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled. Imagine that there's a large application and you have all your code written in just one place, just one file. Too messy, right? How does the code written inside a module run? Before executing the code written inside a module, Node takes the entire code and encloses it within a function wrapper. The syntax of this function wrapper is: The entire code written inside a module is private to the module, unless explicitly stated (exported) otherwise. This is the most significant advantage of having modules in Node.js. Even if you define a global variable in a module using var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because each module has a function wrapper of its own and the code written inside one function is local to that function and cannot be accessed outside this function. Imagine that there are two modules — A and B. The code written inside the module A is enclosed within the function wrapper corresponding to the module A. Similar thing happens with the code written inside the module B. Because the code pertaining to both the modules is enclosed within different functions, these functions will not be able to access the code of each other. (Remember each function in JavaScript has its own local scope?) This is the reason wily odule A cannot access the code written inside module B and vice-versa. The five parameters — exports, require, module, _filename, _dirname are available Side each module in Node. Though these parameters are global to the code within a module yet they are local to the module (because of the function wrapper as explained above). These parameters provide valuable information related to a module. Let's revisit the circle module, which you looked at earlier. There are three constructs defined in this module — a constant variable PI, a function named calculateArea and another function named calculateCircumference. An important point to keep in mind is that all these constructs are private to the circle module by default. It means that you cannot use these constructs in any other module unless explicitly specified. So, the question that arises now is how do you specify something in a module that can be used by some oth module? This is when the module & require parameters of the function wrapper are helpful. Let's discuss these two parameters in this article. module The module parameter (rather a keyword in a module in Node) refers to the object representing the current module. exports is a key of the module object, the corresponding value of which is an object. The default value of module.exports object is {} (empty object). You can check this by logging the value of module keyword Side any module. Let's check what is the value of module parameter Side the circle module. Notice that there is a console.log(module); statement at the end of the code in the file given above. When you see the output, it will log the module object, which has a key named exports and the value corresponding to this key is 0 (an empty object). Now, what does the module.exports object do? Well, it is used for defining stuff that can be exported by a module. Whatever is exported from a module can, in turn, be made available to other modules. Exporting something is quite easy. You just need to add it to the module.exports object. There are three ways to add something to the module.exports object to be exported. Let's discuss these methods one by one.</p>
+        </div>
+        <!--Like section code-->
+        <div id="like-section">
+            <button id="likebutton" class="shadow mb-2" onclick="liked()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+            <p id="likecounter">Be the first one to like this!</p>
+        </div><br>
+        <!--Comment section code-->
+        <textarea id="commenttextarea" placeholder="Leave a comment..."></textarea><br>
+        <button id="commentbutton" value="" class="shadow mb-3" onclick="addComment(commenttextarea)">Comment</button><br>
+        <b id="commentslabel">All Comments</b>
+        <div id="comment-section">
+        </div>
+      </div>
+</body>
+</html>

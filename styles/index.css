@@ -3,6 +3,7 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  min-width: 1080px;
 }
 .main-buttons {
   float: right;
@@ -16,6 +17,7 @@ body, html {
   color: black;
   margin: 10px 10px 10px 10px;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
 }
 .container {
   position: fixed;
@@ -27,32 +29,6 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-.modaltextbox {
-  width: 100%;
-  background-color: #f1f1f1;
-  border: none;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-top: 0%;
-}
-.modallabel {
-  padding: 5px;
-  padding-left: 0%;
-  margin-bottom: 0px;
-}
-.modalbutton {
-  width: 100%;
-  background-color: rgb(20, 199, 20);
-  margin: 15px 0px 15px 0px;
-  border: none;
-
-}
-.signInPageMessage {
-  text-align: center;
-}
-.signUpLink {
-  cursor: pointer;
-}
 .createbutton {
   float: none;
   width: 110px;
@@ -61,5 +37,5 @@ body, html {
   margin-bottom: 10px;
 }
 textarea {
-  height: 400px;
+  height: 200px;
 }

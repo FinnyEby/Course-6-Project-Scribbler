@@ -9,6 +9,7 @@ button {
     margin: 10px 10px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    border: none;
 }
 .site-logo {
     font-family: 'Montez', cursive;
@@ -26,4 +27,30 @@ h1 {
     font-family: 'Ubuntu Mono', monospace;
     margin-top: 0;
     margin: 0 0 0px 10px;
+}
+.modaltextbox {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 0%;
+}
+.modallabel {
+  padding: 5px;
+  padding-left: 0%;
+  margin-bottom: 0px;
+}
+.modalbutton {
+  width: 100%;
+  background-color: rgb(20, 199, 20);
+  margin: 15px 0px 15px 0px;
+  border: none;
+
+}
+.signInPageMessage {
+  text-align: center;
+}
+.signUpLink {
+  cursor: pointer;
 }
