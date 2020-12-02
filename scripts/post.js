@@ -21,9 +21,13 @@ function liked() {
 /*function to enable edit mode*/
 /*0 - view mode / 1 - edit mode*/
 var mode = 0;
+/* variables to check if the title and content are editted */
+/* when values are set to 1 the updated tag is not added*/
+var titleUpdated = 0;
+var contentUpdated = 0;
 /*variables to check if content was updated*/
-var title, titleAfterEdit;
-var content, contentAfterEdit;
+var title;
+var content;
 function enableEditableMode() {
     if(mode == 0) {
         title = document.getElementById("contentTitle").innerHTML;
@@ -43,11 +47,13 @@ function enableEditableMode() {
         document.getElementById('editButton').innerHTML = 'Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i>';
         titleAfterEdit = document.getElementById("contentTitle").innerHTML;
         contentAfterEdit = document.getElementById("content").innerHTML;
-        if(title != titleAfterEdit) {
+        if(title != titleAfterEdit && titleUpdated == 0) {
             document.getElementById("contentTitle").innerHTML = 'UPDATED: '+titleAfterEdit;
+            titleUpdated = 1;
         }
-        if(content != contentAfterEdit) {
+        if(content != contentAfterEdit && contentUpdated == 0) {
             document.getElementById("content").innerHTML = '<p>UPDATED:</p>'+contentAfterEdit;
+            contentUpdated = 1;
         }
     }
 }
